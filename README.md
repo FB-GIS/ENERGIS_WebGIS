@@ -51,13 +51,13 @@ Par le biais d'un dashboard, l'utilisateur pourra accéder soit à son profil ma
 
 L'administrateur disposera d’une interface dédiée (dashboard) pour la gestion des utilisateurs et des données géographiques de l'application.
 
-Par le biais de formulaires dédiés, il pourra :
-Créer de nouveaux comptes utilisateurs.
-Supprimer des comptes clients en cas de demande de résiliation.
-Accéder aux informations des utilisateurs (nom, prénom, numéro de téléphone, adresse e-mail, adresse postale) sans pouvoir les modifier.
-Gérer les rôles et les autorisations (utilisateur standard, administrateur).
-Ajouter, supprimer et modifier les informations et géométries des données géographiques.
-
+Par le biais de formulaires dédiés, il pourra :  
+Créer de nouveaux comptes utilisateurs.  
+Supprimer des comptes clients en cas de demande de résiliation.  
+Accéder aux informations des utilisateurs (nom, prénom, numéro de téléphone, adresse e-mail, adresse postale) sans pouvoir les modifier.  
+Gérer les rôles et les autorisations (utilisateur standard, administrateur).  
+Ajouter, supprimer et modifier les informations et géométries des données géographiques.  
+  
 
 ## Technologies utilisées
 HTML, SCSS JavaScript, Leaflet, React, Node.js  
