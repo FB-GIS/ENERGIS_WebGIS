@@ -3,7 +3,7 @@
 
 Cette application est constituée :
 
-1/ D'un site web destiné à un bureau d'étude spécialisé dans la géomatique appliquée aux énergies renouvelables.
+1/ D'un site web destiné à un bureau d'étude spécialisé dans la géomatique appliquée aux énergies renouvelables. \n
 2/ D'une application WebSIG permettant aux utilisateurs de visualiser l'ensemble des projets éoliens et photovoltaïques répartis sur le territoire national.
 
 ## Fonctionnalités
