@@ -10,13 +10,13 @@ Cette application est constituée :
 
 ### 1) Site internet 
 
-Le site internet sera composé de plusieurs pages permettant de :
+Le site internet sera composé de plusieurs pages permettant de :  
 
-Présenter la géomatique aux professionnels des énergies renouvelables non initiés à cette discipline.
-Décrire les prestations proposées par le bureau d'étude en matière d'analyses géospatiales appliquées aux énergies renouvelables.
-Détailler les fonctionnalités et les données mises à disposition par l'application cartographique.
-Fournir un espace d'inscription et de connexion pour accéder à l'application.
-Offrir une page de contact affichant uniquement les coordonnées du bureau d'étude afin d’obtenir plus d’informations sur l'application et les services proposés.
+Présenter la géomatique aux professionnels des énergies renouvelables non initiés à cette discipline.  
+Décrire les prestations proposées par le bureau d'étude en matière d'analyses géospatiales appliquées aux énergies renouvelables.  
+Détailler les fonctionnalités et les données mises à disposition par l'application cartographique.  
+Fournir un espace d'inscription et de connexion pour accéder à l'application.  
+Offrir une page de contact affichant uniquement les coordonnées du bureau d'étude afin d’obtenir plus d’informations sur l'application et les services proposés.  
 
 ### 2) Application WebSIG 
 
