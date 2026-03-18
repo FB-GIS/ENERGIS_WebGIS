@@ -1,4 +1,4 @@
-### ENERGIS_WebGIS
+# ENERGIS_WebGIS
 ## Description
 
 Cette application est constituée :
@@ -6,9 +6,9 @@ Cette application est constituée :
 1/ D'un site web destiné à un bureau d'étude spécialisé dans la géomatique appliquée aux énergies renouvelables.
 2/ D'une application WebSIG permettant aux utilisateurs de visualiser l'ensemble des projets éoliens et photovoltaïques répartis sur le territoire national.
 
-# Fonctionnalités
+## Fonctionnalités
 
-# 1) Site internet 
+### 1) Site internet 
 
 Le site internet sera composé de plusieurs pages permettant de :
 
@@ -18,11 +18,11 @@ Détailler les fonctionnalités et les données mises à disposition par l'appli
 Fournir un espace d'inscription et de connexion pour accéder à l'application.
 Offrir une page de contact affichant uniquement les coordonnées du bureau d'étude afin d’obtenir plus d’informations sur l'application et les services proposés.
 
-# 2) Application WebSIG 
+### 2) Application WebSIG 
 
 L'ensemble des fonctionnalités de l'application sera donc associé à l'interface cartographique de manière à exploiter les données géospatiales et gérer les comptes utilisateurs.
 
-# A. Utilisateurs
+### A. Utilisateurs
 
 L'accès à la plate forme WebSIG nécessitera une authentification via un identifiant (adresse e-mail) et un mot de passe renseignés lors de l'inscription. Les utilisateurs pourront se déconnecter librement de l'application et gérer leurs informations personnelles via un profil utilisateur.
 
@@ -48,7 +48,7 @@ Recherche rapide de localités via un champ de recherche : les utilisateurs pour
 Par le biais d'un dashboard, l'utilisateur pourra accéder soit à son profil mais aussi à l'ensemble des zones d'étude qu'il aura tracées dans l'application cartographique. Il pourra donc les visualiser, les modifier mais aussi les supprimer.
 
 
-# B. Administrateurs
+### B. Administrateurs
 
 L'administrateur disposera d’une interface dédiée (dashboard) pour la gestion des utilisateurs et des données géographiques de l'application.
 
