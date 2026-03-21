@@ -65,7 +65,7 @@ SCSS, JavaScript, Leaflet, React, Node.js, MySQL
 ## Installation locale
 Clonez ce dépôt : git clone https://github.com/FB-GIS/ENERGIS_WebGIS.git  
 Créez votre BDD avec les fichiers SQL correspondant aux tables (voir MCD/MLD dans dossier backend) contenus dans le dossier backend/data  
-Modifiez les information du fichier .env_exemple avec les infos de votre BDD (host, user, password...etc) et renommez le en .env
+Modifiez les information du fichier .env_exemple avec les infos de votre BDD (host, user, password...etc) et renommez-le en .env
 Dans le terminal de votre IDE, positionnez vous sur le dossier backend : cd sites/0_ENERGIS/backend/ PUIS npm run dev  
 Dans un second terminal de votre IDE, positionnez vous sur le dossier frontend : cd sites/0_ENERGIS/backend/ PUIS npm run dev  
 Pour la gestion du SCSS, positionnez vous sur le dossier css : cd sites/0_ENERGIS/frontend/src/css/ PUIS sass --watch style.scss:style.css  
