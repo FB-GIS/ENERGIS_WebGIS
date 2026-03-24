@@ -1,77 +1,76 @@
 # ENERGIS_WebGIS
 ## Description
 
-Cette application est constituée :
-
-1/ D'un site web destiné à un bureau d'étude fictif spécialisé dans la géomatique appliquée aux énergies renouvelables.  
-2/ D'une application WebSIG permettant aux utilisateurs de visualiser l'ensemble des projets éoliens et photovoltaïques implantés en France métropolitaine.
-
-## Fonctionnalités
-
-### 1) Site internet 
-
-Le site internet sera composé de plusieurs pages permettant de :  
-
-- Présenter la géomatique aux professionnels des énergies renouvelables non initiés à cette discipline.  
-- Décrire les prestations proposées par le bureau d'étude en matière d'analyses géospatiales appliquées aux énergies renouvelables.  
-- Détailler les fonctionnalités et les données mises à disposition par l'application cartographique.  
-- Fournir un espace d'inscription et de connexion pour accéder à l'application.   
-
-### 2) Application WebSIG 
-
-L'ensemble des fonctionnalités de l'application sera donc associé à l'interface cartographique de manière à exploiter les données géospatiales et gérer les comptes utilisateurs.
-
-#### A. <ins>Utilisateurs</ins>  
-
-L'accès à la plate forme WebSIG nécessitera une authentification via un identifiant (adresse e-mail) et un mot de passe renseignés lors de l'inscription. Les utilisateurs pourront se déconnecter librement de l'application et gérer leurs informations personnelles via un profil utilisateur.
-
-Informations collectées lors de l'inscription via un formulaire d'enregistrement :
-Nom
-Prénom
-Adresse e-mail
-Adresse postale
-Code postal
-Ville
-Numéro de téléphone
-Mot de passe
-
-L’ensemble de ces informations pourra être mis à jour par l’utilisateur via son espace personnel.
-
-Fonctionnalités cartographiques accessibles aux utilisateurs :  
-- Consultation des données cartographiques en lecture seule par simple clic dans l'application.  
-- Export de cartes au format PDF  
-- Utilisation d’outils de calcul et de mesure des distances et surfaces.  
-- Accès à une couche de données personnelle dédiée aux utilisateurs pour tracer leurs propres zones de projet (éolien ou photovoltaïque).  
-- Recherche rapide de localités via un champ de recherche : les utilisateurs pourront entrer une adresse et l'application effectuera un zoom automatique sur le lieu qui aura été trouvé grâce à un outil de géocodage issu de la librairie Leaflet (utilisant une API OpenStreetMap).  
+This application consists of:  
   
-Par le biais d'un dashboard, l'utilisateur pourra accéder à son profil mais aussi à l'ensemble des zones d'étude qu'il aura tracées dans l'application   cartographique. Il pourra donc les visualiser, les modifier mais aussi les supprimer.  
+1/ A website for a fictional consulting firm specializing in geomatics applied to renewable energies.  
+2/ A WebGIS application that allows users to visualize all wind and photovoltaic projects implemented in metropolitan France.  
+
+## Features  
+
+### 1) Website  
+
+The website will consist of several pages allowing users to:    
+  
+- Present geomatics to renewable energy professionals who are not familiar with this discipline.    
+- Describe the services offered by the consulting firm in terms of geospatial analysis applied to renewable energies.      
+- Detail the features and data available through the mapping application.    
+- Provide a registration and login space to access the application.     
+
+### 2) WebGIS Application  
+
+All application features will be integrated with the mapping interface to leverage geospatial data and manage user accounts.  
+  
+#### A. <ins>Users</ins>  
+
+Access to the WebGIS platform will require authentication via a username (email address) and password provided during registration. Users will be able to freely log out of the application and manage their personal information through a user profile.  
+  
+Informations collectées lors de l'inscription via un formulaire d'enregistrement :  
+Last name  
+First name  
+Email address  
+Postal address  
+Postal code  
+City  
+Phone number  
+Password  
+  
+All this information can be updated by the user through their personal space.  
+
+Mapping features accessible to users:    
+- Read-only consultation of cartographic data by simple click in the application.    
+- Export of maps to PDF format.   
+- Use of calculation tools and distance/area measurement.    
+- Access to a personal data layer dedicated to users for drawing their own project areas (wind or solar).    
+- Quick locality search via a search field: users can enter an address and the application will automatically zoom to the location found using a geocoding tool from the Leaflet library (using an OpenStreetMap API).    
+   
+Through a dashboard, the user can access their profile as well as all the study areas they have drawn in the mapping application. They can view, modify, and delete them.    
 
 
-#### B. <ins>Administrateurs</ins>  
+#### B. <ins>Administrators</ins>  
 
-L'administrateur disposera d’une interface dédiée (dashboard) pour la gestion des utilisateurs et des données géographiques de l'application.  
-Par le biais de formulaires dédiés, il pourra :  
+The administrator will have a dedicated interface (dashboard) for managing users and the application's geographic data:    
 
-- Créer de nouveaux comptes utilisateurs.  
-- Supprimer des comptes clients en cas de demande de résiliation.  
-- Accéder aux informations des utilisateurs (nom, prénom, numéro de téléphone, adresse e-mail, adresse postale) sans pouvoir les modifier.  
-- Gérer les rôles et les autorisations (utilisateur standard, administrateur).  
-- Ajouter, supprimer et modifier les informations et géométries des données géographiques.  
+- Create new user accounts.   
+- Delete client accounts upon cancellation request.    
+- Access user information (last name, first name, phone number, email address, postal address) without being able to modify it.   
+- Manage roles and permissions (standard user, administrator).  
+- Add, delete, and modify geographic data information and geometries.  
   
 
-## Technologies utilisées
+## Technologies Used  
 SCSS, JavaScript, Leaflet, React, Node.js, MySQL
 
-## Installation locale
-1/ Clonez ce dépôt : git clone https://github.com/FB-GIS/ENERGIS_WebGIS.git  
-2/ Créez votre BDD MySQL avec les fichiers SQL correspondant aux tables (voir MCD/MLD dans dossier *backend*) contenus dans le dossier *backend/data*    
-3/ Modifiez les information du fichier .env_exemple avec les infos de votre BDD (host, user, password, code secret...etc) et renommez-le en .env  
-4/ Dans le terminal de votre IDE, positionnez vous sur le dossier backend : *cd sites/0_ENERGIS/backend/* sous Windows PUIS *npm run dev*  
-5/ Dans un second terminal de votre IDE, positionnez vous sur le dossier frontend : *cd sites/0_ENERGIS/backend/* sous Windows PUIS *npm run dev*    
-6/ Pour la gestion du SCSS, positionnez vous sur le dossier css : *cd sites/0_ENERGIS/frontend/src/css/* PUIS *sass --watch style.scss:style.css*  
+## Local Installation  
+1/ Clone this repository: git clone https://github.com/FB-GIS/ENERGIS_WebGIS.git  
+2/ Create your MySQL database with the SQL files corresponding to the tables (see MCD/MLD in *backend* folder) contained in the *backend/data* folder.    
+3/ Modify the information in the .env_example file with your database details (host, user, password, secret code, etc.) and rename it to .env   
+4/ In your IDE terminal, navigate to the backend folder: *cd sites/0_ENERGIS/backend/* on Windows THEN *npm run dev*  
+5/ In a second IDE terminal, navigate to the frontend folder: *cd sites/0_ENERGIS/backend/* on Windows THEN *npm run dev*    
+6/ For SCSS management, navigate to the css folder: *cd sites/0_ENERGIS/frontend/src/css/* THEN *sass --watch style.scss:style.css*  
 
-## Sources des données
-Les données spécifiques aux projets éoliens et photovoltaïques ont été agrégées à partir de plusieurs sources publiques (DREAL, DDT, Geo-IDE...etc)  
+## Data Sources  
+Data specific to wind and photovoltaic projects was aggregated from multiple public sources (DREAL, DDT, Geo-IDE, etc.)    
 
-## Auteur
+## Author  
 Frédéric BARON
