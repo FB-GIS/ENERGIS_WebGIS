@@ -1,17 +1,20 @@
+// We import Express framework
 const express = require("express")
+// We create an instance of Express, this will be our server
 const app = express()
+// We import promise-mysql in order to access to our database
 const mysql = require("promise-mysql")
 
-app.use(express.urlencoded({ extended: false }))
-app.use(express.json())
+app.use(express.urlencoded({ extended: false })) //Allows us to translate our URLs into objects to retrieve URL parameters (retrieve the form data in POST in the req.body object)
+app.use(express.json()) //convert the request body data into a JavaScript object
 
-const cors = require('cors')
-app.use(cors())
+const cors = require('cors') //we use the cors library to authorize cross-origin requests (API)
+app.use(cors()) //cors is used to allow cross-origin requests (API)
 
-app.use(express.static(__dirname + '/public'))
+app.use(express.static(__dirname + '/public')) //we put the public folder directly at the root of the project to be able to use it directly
 
 const dotenv = require("dotenv")
-dotenv.config()
+dotenv.config() //We load the environment variables from a .env file
 
 //Routes import
 const userRoutes = require("./routes/userRoutes")
@@ -33,11 +36,11 @@ mysql.createConnection({
         database: process.env.DB_DATABASE
     }).then((db) => {
         console.log('Connexion à la base de données avec succès.')
-        
+        //We test the connection to the database every 10 seconds to ensure it is still active
         setInterval(async function(){
         let res = await db.query('SELECT 1')
         }, 10000)
-
+        //We define a test route to verify that API is working and server is online
         app.get('/', async(req, res) => {
             res.json({ status: 200, msg: "WebGIS Application" })
         })
